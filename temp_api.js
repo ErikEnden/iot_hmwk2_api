@@ -3,7 +3,7 @@ const pgp = require('pg-promise')()
 const express = require('express')
 const bp = require('body-parser')
 const app = express()
-const port = 3000
+const port = 3002
 const cors = require('cors')
 const db = pgp(
     'postgres://' +
@@ -46,4 +46,4 @@ app.post('/set-temp', function(req, res){
       })
 })
 
-app.listen(port, () => console.log('Listening on 3000'))
+app.listen(port, () => console.log('Listening on 3002'))
